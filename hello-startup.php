@@ -95,3 +95,18 @@ function hello_startup_notice() {
             <p>' . esc_html($message) . '</p>
           </div>';
 }
+/* -----------------------------
+   Shortcode Feature
+------------------------------*/
+add_shortcode('hello_startup', 'hello_startup_shortcode');
+
+function hello_startup_shortcode() {
+    $message = get_option(
+        'hello_startup_message',
+        'Hello! Your custom WordPress plugin is active 🚀'
+    );
+
+    return '<div class="hello-startup-shortcode">' .
+            esc_html($message) .
+           '</div>';
+}

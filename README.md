@@ -14,3 +14,8 @@ A basic custom WordPress plugin created as a learning project.
 
 ## Purpose
 Learning WordPress plugin development and GitHub consistency.
+
+## New Feature – Shortcode
+Use this shortcode to display the message anywhere:
+
+[hello_startup]
